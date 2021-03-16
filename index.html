@@ -4,20 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>rodrigo</header>
-    <div class="container">
-        <section>
-            <div class="row">
-                <div class="col-3">briss</div>
-                <div class="col-6">juan</div>
-                <div class="col-3">briss</div>
+<body >
+  <header class="sticky-top">
+    <nav class="container-fluid  bg-white menunav " > 
+      <div class="row justify-content-between align-items-center box h-100" >
+        <div class="col-1 ms-2 d-md-none  d-flex align-items-center justify-content-center   ">
+          <span class="" style="cursor:pointer" onclick="openNav()"><img src="icon4.svg" alt=""></span>
+        </div>
+        <div class="col-2  col-md-7 ps-md-2   col-lg-5 mx-lg-5  div-logo" >
+          <a class="ms-lg-5" href="/index.html" target="_self">
+            <div class="site-logo"></div>
+          </a>
+          <form class="ps-3 d-none d-md-block">
+            <input type="text" name="q" placeholder="Search..." autocomplete="off" class="search " >
+          </form> 
+        </div>
+        <div class="col-8 col-md-5    ps-5 ps-md-2  d-flex justify-content-center  col-lg-5  ms-lg-5">
+          <a href="https://dev.to/search">
+            <div class=" iconos d-md-none ">
+              <img src="/icon3.svg" alt="">
             </div>
-        </section>
-    </div>
-    <footer>rodrigo</footer>
+          </a>
+          <a href="https://dev.to/new"  >
+            <button class="boton d-none d-md-block ms-lg-5">Write a post</button>
+          </a>
+          
+          <a href="https://dev.to/connect">
+              <div class="iconos ms-md-3" >
+                  <img src="icon1.svg" alt="">
+              </div>
+          </a>
+          <a href="https://dev.to/notifications">
+              <div class="iconos" >
+                  <img src="icon2.svg">
+              </div>
+          </a>
+          <div class="dropdown pe-2 pt-1 pe-md-0" >
+            <a id="" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+              <div class="avatar "></div>
+            </a>
+              <ul class="dropdown-menu dropdown-content " aria-labelledby="dropdownMenuOffset">
+                <li><a class="dropdown-item py-2"> KODEMIA <br> <span class="text-muted">@kodemia</span></a>
+                <li><a class="dropdown-item py-2 border-top" href="https://dev.to/dashboard" >Dashboard</a></li>
+                <li><a class="dropdown-item py-2" href="https://dev.to/new">Write a Post</a></li>
+                <li><a class="dropdown-item py-2" href="https://dev.to/readinglist">Reading list</a></li>
+                <li><a class="dropdown-item py-2 border-bottom" href="https://dev.to/settings">Settings</a></li>
+                <li><a class="dropdown-item py-2 " href="hhttps://dev.to/signout_confirm">Sign Out</a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+      <div id="mySidenav" class="sidenav" >
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/icon5.svg" alt=""></a>
+        <div CLASS="border-bottom">DEV Community</div>
+        <div class="row">
+          <div class="col-12">a</div>
+          <div class="col-12">b</div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </nav>  
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "80%";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.body.style.backgroundColor = "white";
+      }
+    </script>
+  </header> 
 
+  
+
+  
+  <footer>
+
+  </footer>
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 </html>

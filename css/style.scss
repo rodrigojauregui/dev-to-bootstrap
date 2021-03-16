@@ -1,3 +1,134 @@
-body{
-    font-size: 13px;
+
+
+
+.menunav{
+    height: 56px;
+    box-shadow: 0 1px 1px -1px #333;
+    align-self: flex-start;
+    width: 100%;
+    
+    
 }
+
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+  
+.sidenav a + div{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.div-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    .site-logo{
+        width: 54px;
+        height: 40px;
+        border-radius: 8px;
+        box-sizing: border-box;
+        background-image: url("https://cdn4.iconfinder.com/data/icons/logos-and-brands-1/512/84_Dev_logo_logos-512.png");
+        background-position: center;
+        background-size: cover;
+        &:hover{
+            opacity: .7;
+        }
+    }
+}
+
+.iconos{
+    height: 40px;
+    width: 40px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 10px;
+    &:hover{
+        border-radius: 1000px;
+        background-color: #F6F6F6;
+    }
+}
+.avatar{
+    width: 30px;
+    height: 30px;
+    background-image: url("https://res.cloudinary.com/practicaldev/image/fetch/s--4jmu4dyU--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/590734/31d54d9d-b30a-40f4-afcc-3aa60880a06c.png");
+    background-size: cover;
+    border-radius: 1000px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-right: 15px;
+}
+.dropdown-content {
+    
+    width: 95vw;
+    background-color: white;
+    min-width: 160px;
+    border: 2px solid black;
+    
+    left: -5px !important;
+    box-shadow: 5px 5px black;
+}
+.search{
+    width: 385px; 
+    height:40px; 
+    background-color:#fafafa; 
+    border-radius: 5px; 
+    border: #B6BDC3 solid 1px;
+}
+.boton{
+    background-color:  #3E49D7;
+    width: 120px;
+    height: 40px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    margin-left: 15px;
+    &:hover{
+        background-color: #343EB7;
+    }
+}
+@media screen and (min-width:640px){
+    .dropdown-content {
+    
+        width: 35vw;
+        background-color: white;
+        border: 2px solid black;
+        
+        left: -5px !important;
+        box-shadow: 5px 5px black;
+    }
+}
+  
+  
