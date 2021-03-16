@@ -6,8 +6,10 @@
 
 .menunav {
   height: 56px;
-  box-shadow: 0 1px 1px -1px #333;
-  align-self: flex-start;
+  -webkit-box-shadow: 0 1px 1px -1px #333;
+          box-shadow: 0 1px 1px -1px #333;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   width: 100%;
 }
 
@@ -19,6 +21,7 @@
   left: 0;
   background-color: white;
   overflow-x: hidden;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -28,6 +31,7 @@
   font-size: 25px;
   color: black;
   display: block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -41,21 +45,30 @@
 
 .div-logo {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .div-logo .site-logo {
   width: 54px;
   height: 40px;
   border-radius: 8px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-image: url("https://cdn4.iconfinder.com/data/icons/logos-and-brands-1/512/84_Dev_logo_logos-512.png");
   background-position: center;
   background-size: cover;
 }
+
 .div-logo .site-logo:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .iconos {
@@ -63,12 +76,20 @@
   width: 40px;
   margin-top: auto;
   margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-right: 10px;
 }
+
 .iconos:hover {
   border-radius: 1000px;
   background-color: #F6F6F6;
@@ -82,10 +103,17 @@
   border-radius: 1000px;
   margin-top: auto;
   margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-right: 15px;
 }
 
@@ -95,7 +123,8 @@
   min-width: 160px;
   border: 2px solid black;
   left: -5px !important;
-  box-shadow: 5px 5px black;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
 }
 
 .search {
@@ -115,6 +144,7 @@
   color: white;
   margin-left: 15px;
 }
+
 .boton:hover {
   background-color: #343EB7;
 }
@@ -125,12 +155,14 @@
     background-color: white;
     border: 2px solid black;
     left: -5px !important;
-    box-shadow: 5px 5px black;
+    -webkit-box-shadow: 5px 5px black;
+            box-shadow: 5px 5px black;
   }
 }
+
 body {
   background-color: #eef0f1;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 h2 {
@@ -141,7 +173,8 @@ h2 {
 
 @media only screen and (min-width: 0px) {
   .article {
-    box-shadow: 1px 2px 8px #d2d2d2;
+    -webkit-box-shadow: 1px 2px 8px #d2d2d2;
+            box-shadow: 1px 2px 8px #d2d2d2;
   }
   .article .card .cover {
     padding-bottom: 43%;
@@ -170,6 +203,8 @@ h2 {
   .article .card .tag ul {
     color: #b4b4b4;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 300;
     margin: 5px 0;
@@ -184,8 +219,12 @@ h2 {
     color: #454444;
   }
   .article .card .social-interaction {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
   .article .card .social-interaction #reaction, .article .card .social-interaction #read {
     margin-right: 5px;
@@ -236,4 +275,6 @@ h2 {
     margin: 5px 0 15px;
   }
 }
-/*media only 0*//*# sourceMappingURL=style.css.map */
+
+/*media only 0*/
+/*# sourceMappingURL=style.css.map */
