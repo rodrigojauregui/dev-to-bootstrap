@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
 .menunav {
   height: 56px;
   box-shadow: 0 1px 1px -1px #333;
@@ -121,4 +127,113 @@
     left: -5px !important;
     box-shadow: 5px 5px black;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+body {
+  background-color: #eef0f1;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 0px) {
+  .article {
+    box-shadow: 1px 2px 8px #d2d2d2;
+  }
+  .article .card .cover {
+    padding-bottom: 43%;
+    background-position: center;
+    background-size: cover;
+  }
+  .article .card .cover#uno {
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png);
+  }
+  .article .card .user {
+    margin-bottom: 10px;
+  }
+  .article .card .user .avatar {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .article .card .user .avatar .icon-avatar {
+    border: thin solid #dedede;
+    border-radius: 15px;
+    width: 100%;
+  }
+  .article .card .user p {
+    display: block;
+  }
+  .article .card .tag ul {
+    color: #b4b4b4;
+    list-style: none;
+    display: flex;
+    font-weight: 300;
+    margin: 5px 0;
+    padding: 0;
+  }
+  .article .card .tag ul li {
+    margin: 0 5px;
+    color: #cdcdcd;
+    font-size: 15px;
+  }
+  .article .card .tag ul li:hover {
+    color: #454444;
+  }
+  .article .card .social-interaction {
+    display: flex;
+    justify-content: start;
+  }
+  .article .card .social-interaction #reaction, .article .card .social-interaction #read {
+    margin-right: 5px;
+  }
+  .article .card .social-interaction #comment {
+    margin-right: auto;
+  }
+  .article .card .social-interaction #read {
+    font-size: 10px;
+  }
+  .article .card .btn-social {
+    background: white;
+    padding: 5px 12px;
+    font-size: 15px;
+  }
+  .article .card .btn-social:hover {
+    background: #eef0f1;
+    border-radius: 6px;
+  }
+  .article .card .active {
+    background-color: #d9d9d9 !important;
+    border-radius: 6px;
+  }
+  .article .card .active:hover {
+    background: #bbbbbb !important;
+  }
+  .article .card .comments {
+    padding: 10px 10px 1px 10px;
+    background-color: #eef0f1;
+  }
+  .article .card .comments .user-comment {
+    margin-bottom: 10px;
+  }
+  .article .card .comments .user-comment .avatar-comment {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .article .card .comments .user-comment .avatar-comment .icon-avatar-comment {
+    border: thin solid #dedede;
+    border-radius: 15px;
+    width: 100%;
+  }
+  .article .card .comments p {
+    margin: 5px 0 25px;
+  }
+  .article .card .comments p:nth-of-type(2) {
+    margin: 5px 0 15px;
+  }
+}
+/*media only 0*//*# sourceMappingURL=style.css.map */
