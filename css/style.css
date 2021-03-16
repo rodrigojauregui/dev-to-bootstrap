@@ -118,7 +118,62 @@ h2 {
   .article .card .comments p:nth-of-type(2) {
     margin: 5px 0 15px;
   }
+  .card-article {
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+    border: thin solid #dedede;
+    min-height: 200px;
+  }
+  .card-article .card-topic {
+    font-size: 14px;
+    color: #717171;
+  }
+  .card-article .card-news:hover {
+    background-color: #f2f2f2;
+  }
+  .card-article .card-create-listing {
+    text-align: center;
+  }
+  .card-article .card-create-listing a {
+    text-decoration: none;
+    color: black;
+  }
+  .card-article .card-create-listing a:hover {
+    color: purple;
+  }
+  .card-article .tex-news {
+    font-size: 30px;
+  }
 }
 
 /*media only 0*/
+@media only screen and (min-width: 768px) {
+  .tex-img-1 {
+    font-size: 1.5rem;
+  }
+  .tex-img {
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    margin-bottom: 2rem;
+    margin-top: 15px;
+    font-size: 2rem;
+  }
+  .img-2 {
+    background-image: url(../img/57390242_386431405416711_440644832181536446_n.jpg__nc_ht=scontent-lga3-1.cdninstagram.com);
+    width: 100%;
+    height: auto;
+    min-height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+}
 /*# sourceMappingURL=style.css.map */
