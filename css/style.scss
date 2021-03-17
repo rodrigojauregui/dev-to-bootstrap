@@ -383,7 +383,11 @@ h2 {
                 }
                 .tex-news{
                     font-size: 30px;
+                        a {
+                            text-decoration: none;
+                    }
                 }
+                
         
         }
 } /*media only 0*/

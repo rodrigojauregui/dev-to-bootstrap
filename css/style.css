@@ -412,6 +412,9 @@ h2 {
   .card-article .tex-news {
     font-size: 30px;
   }
+  .card-article .tex-news a {
+    text-decoration: none;
+  }
 }
 
 /*media only 0*/
