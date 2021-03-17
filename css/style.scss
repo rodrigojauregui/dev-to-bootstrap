@@ -29,6 +29,7 @@ $gray-footer: #d3d7dc;
     background-color:white;
     overflow-x: hidden;
     transition: 0.5s;  
+    
 }
 .sidenav a + div{
     padding: 8px 8px 8px 32px;
@@ -149,7 +150,12 @@ $gray-footer: #d3d7dc;
         box-shadow: 5px 5px black;
         
     }
+    .ps-lg-variable{
+        padding-left: 5rem !important;
+    }
 }
+
+
 .footer-cols{
     width: auto;
     padding: .5rem;
@@ -168,8 +174,9 @@ footer{
     position: absolute;
     top:0;
     right:5vw;
-
 }
+
+
 
 
 
