@@ -363,6 +363,10 @@ h2 {
             box-shadow: none !important;
             border: thin solid $boder-color;
             min-height: 200px;
+                .tex-See{
+                    cursor: pointer;
+                    color: #3E49D7;
+                }
                 
                 .card-topic {
                     font-size: 14px;
@@ -388,7 +392,11 @@ h2 {
                         }
                 }
                 .tex-news{
-                    font-size: 30px;
+                    font-size: 30px;  
+                    &:hover {
+                        cursor: pointer;
+                        color: #3E49D7;
+                    }
                 }
         
         }
