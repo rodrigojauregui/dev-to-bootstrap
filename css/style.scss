@@ -141,7 +141,7 @@ $gray-footer: #d3d7dc;
 @media screen and (min-width:992px){
     .dropdown-content {
     
-        width: 30vw;
+        width: 20vw;
         background-color: white;
         border: 2px solid black;
         
@@ -163,6 +163,12 @@ footer{
 .s-auto{
     width: auto;
     padding: .5rem;
+}
+.sloth{
+    position: absolute;
+    top:0;
+    right:5vw;
+
 }
 
 
