@@ -177,6 +177,10 @@
     -webkit-box-shadow: 5px 5px black;
             box-shadow: 5px 5px black;
   }
+
+  .ps-lg-variable {
+    padding-left: 5rem !important;
+  }
 }
 
 .footer-cols {
