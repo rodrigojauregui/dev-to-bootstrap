@@ -368,6 +368,10 @@ h2 {
     border: thin solid #dedede;
     min-height: 200px;
   }
+  .card-article .tex-See {
+    cursor: pointer;
+    color: #3E49D7;
+  }
   .card-article .card-topic {
     font-size: 14px;
     color: #717171;
@@ -387,6 +391,10 @@ h2 {
   }
   .card-article .tex-news {
     font-size: 30px;
+  }
+  .card-article .tex-news:hover {
+    cursor: pointer;
+    color: #3E49D7;
   }
 }
 /*media only 0*/
