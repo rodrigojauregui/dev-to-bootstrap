@@ -185,6 +185,70 @@ h2 {
 }
 
 @media only screen and (min-width: 0px) {
+
+    .subnav-mobile {
+        display: flex;
+        justify-content: start;
+        padding: 10px 10px 2px;
+
+            .section-title {
+                margin-right: auto;
+                display: flex;
+                align-items: center;
+                    H1 {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+            }
+
+            select {
+                background-color: white;
+                border: thin solid $boder-color;
+                border-radius: 7px;
+                padding: 10px 25px 10px 8px;
+                margin-right: 14px;
+                display: flex;
+                align-content: center;
+                /*appearance: unset;*/
+            }
+
+    }
+
+    .subnav {
+        display: none;
+        padding: 10px 10px 4px;
+        justify-content: start;
+        height: 60px;
+        
+            H1 {
+                color: $black;
+                font-size: 22px;
+                margin-right: auto;
+                padding: 5px 0;
+                font-weight: 600;
+            }
+            .subnav-bar {
+                display: flex;
+                a {
+                    padding: 10px;
+                    color: $black;
+                    height: 45px;
+                    &.active{ 
+                        border-bottom: 3px solid $blue;
+                        padding: 10px 0px;
+                            &:hover {
+                                padding: 10px 10px;
+                                background-color: #174ece14;
+                                border-radius: 6px 6px 0px 0px;
+                            }
+                    }
+                    &:hover {
+                        border-bottom: 3px solid blue;
+                    }
+                }
+            }
+    }
+
     .article {
         box-shadow: 1px 2px 8px #d2d2d2;  
             .card {
@@ -324,6 +388,13 @@ h2 {
         }
 } /*media only 0*/
   @media only screen and (min-width: 768px) {
+    .subnav-mobile {
+        display: none;
+    }
+
+    .subnav {
+        display: flex
+    }
       
     .tex-img-1{
         font-size: 1.5rem;
