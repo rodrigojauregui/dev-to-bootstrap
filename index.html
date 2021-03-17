@@ -25,7 +25,7 @@
                 <input type="text" name="q" placeholder="Search..." autocomplete="off" class="search " >
               </form> 
             </div>
-            <div class="col-8 col-md-5    ps-5 ps-md-2  d-flex justify-content-center  col-lg-5  ms-lg-5">
+            <div class="col-8 col-md-5   ps-lg-variable ps-5 ps-md-2  d-flex justify-content-center  col-lg-5  ms-lg-5">
               <a href="https://dev.to/search">
                 <div class=" iconos d-md-none ">
                   <img src="/icon3.svg" alt="">
@@ -64,25 +64,52 @@
       </div>
       <div id="mySidenav" class="sidenav" >
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="/icon5.svg" alt=""></a>
-        <div CLASS="border-bottom">DEV Community</div>
+        <div style="height: 56px; ;" class="border-bottom "><h5 class="pt-2">DEV Community</h5></div>
         <div class="row">
-          <div class="col-12">a</div>
-          <div class="col-12">b</div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
+          <div class="col-12 py-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-home.svg" alt="">Home</div>
+          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center "><img class="pe-2"  src="/img/icon-reading-list.svg" alt="">Reading List</div>
+          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-listings.svg" alt="">Listings</div>
+          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-podcasts.svg" alt="">Podcasts</div>
+          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-videos.svg" alt="">Videos</div>
+          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-tags.svg" alt="">Tags</div>
+          <button class=" accordion col-12 pb-4 ms-5 ps-4 d-flex align-items-center text-muted">more...</button>
+            <div class="panel">
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-code-of-conduct.svg" alt="">Code of Conduct</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-FAQ.svg" alt="">FAQ</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-dev-shop.svg" alt="">DEV Shop</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-sponsor.svg" alt="">Sponsors</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="">About</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-privacy-policy.svg" alt="">Privacy Policy</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-terms-of-use.svg" alt="">Terms of use</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-contact.svg" alt="">Contact</div>
+            <div class="col-12 pt-4 ms-2 d-flex justify-content-around border-top">
+                <div class="mx-2"><img src="/img/icon-twitter.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-fb.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-git.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-ig.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-mess.svg" alt=""></div>
+            </div>
+          
         </div>
+        
       </div>
     </nav>  
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "80%";
@@ -96,7 +123,7 @@
     </script>
   </header> 
 
-  <div class="container-fluid p-0 p-md-0 p-lg-5 p-xl-5 mt-5 mb-5">
+  <div class="container-fluid pl-0 pl-md-0 pl-lg-5 pl-xl-5 pr-0 pr-md-0 pr-lg-5 pr-xl-5 pt-4 pb-4">
     <section>
       <div class="row d-flex"><!--Row-->
                 <!--COLUMNA 1 PARTE BRISSET-->
@@ -235,6 +262,7 @@
                             <div class="More mt-2 mb-4 pl-4.7">
                                 <p >More...</p>
                             </div>
+                            
             
                         </div>
             
@@ -365,7 +393,7 @@
                                             <h2 class="card-title">#Day 44-45: LeetCode LL, Codechef Long Challenge etc</h2>
                                             <div class="tag">
                                                     <ul>
-                                                        <li>#typescript</li>
+                                                        
                                                         <li>#typescript</li>
                                                         <li>#node</li>
                                                         <li>#javascript</li>
@@ -417,7 +445,6 @@
                                             <div class="tag">
                                                     <ul>
                                                         <li>#typescript</li>
-                                                        <li>#typescript</li>
                                                         <li>#node</li>
                                                         <li>#javascript</li>
                                                         <li>#webdev</li>
@@ -456,7 +483,6 @@
                                             <div class="tag">
                                                     <ul>
                                                         <li>#typescript</li>
-                                                        <li>#typescript</li>
                                                         <li>#node</li>
                                                         <li>#javascript</li>
                                                         <li>#webdev</li>
@@ -494,7 +520,6 @@
                                             <div class="tag">
                                                     <ul>
                                                         <li>#typescript</li>
-                                                        <li>#typescript</li>
                                                         <li>#node</li>
                                                         <li>#javascript</li>
                                                         <li>#webdev</li>
@@ -531,7 +556,6 @@
                                             <h2 class="card-title">#Day 44-45: LeetCode LL, Codechef Long Challenge etc</h2>
                                             <div class="tag">
                                                     <ul>
-                                                        <li>#typescript</li>
                                                         <li>#typescript</li>
                                                         <li>#node</li>
                                                         <li>#javascript</li>
@@ -560,7 +584,7 @@
                     <div class="row m-0">
                         <div class="card-article height:auto rounded mb-3 bg-light">
                             <div class="card-btn d-flex justify-content-end p-1">
-                                <div class="btn-link"> See all</div>
+                                <div class="tex-See"> See all</div>
                             </div>
                             <div class="card-news height:auto p-3 border-top">
                                 <div class="card-title"> Meet iOS community with informal interviews</div>
@@ -614,7 +638,7 @@
   </div>
 
  <!--inicia footer de rodrigo-->
-  <footer>
+  <footer style="position: relative;">
     <div class="container-fluid bg-gray-footer p-3 p-md-5 " >
       <div class="row">
         <div class="col-12 px-4">
@@ -643,13 +667,13 @@
         </div>
         <div class="col-12 pt-3 d-lg-none"><p><b>Write a Post</b></p></div>
         <div class="col-12 pt-3 d-flex justify-content-center">
-            <div>a</div>
-            <div>b</div>
-            <div>c</div>
-            <div>d</div>
-            <div>e</div>
+            <div class="mx-2"><img src="/img/icon-twitter.svg" alt=""></div>
+            <div class="mx-2"><img src="/img/icon-fb.svg" alt=""></div>
+            <div class="mx-2"><img src="/img/icon-git.svg" alt=""></div>
+            <div class="mx-2"><img src="/img/icon-ig.svg" alt=""></div>
+            <div class="mx-2"><img src="/img/icon-mess.svg" alt=""></div>
         </div>
-        <hr style="background-color: black; width: 10vw; height: 1px;margin: auto;">
+        <hr style="background-color: black; width: 15vw; height: 1px;margin: auto;">
         <div class="col-12 pt-2 fs-s">
           <p><b>DEV Community</b> - A constructive and inclusive social network for software developers. With you every step of your journey.
           </p>
@@ -661,11 +685,11 @@
             Made with love and <a href="https://dev.to/t/rails" target="_blank" ><b>Ruby on Rails</b></a>. DEV Community &copy; 2016 - 2021.
           </p>
         </div>
-        <div class="col-12 pt-2">plantita
-
+        <div class="col-12 pt-2">
+            <img src="/icon.6.svg" alt="">
         </div>
       </div>
-    <img   width="52" height="120" loading="lazy" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png">
+    <img class=" sloth d-none d-lg-block"  width="52" height="120" loading="lazy" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png">
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">

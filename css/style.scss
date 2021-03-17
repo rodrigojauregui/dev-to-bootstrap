@@ -29,6 +29,7 @@ $gray-footer: #d3d7dc;
     background-color:white;
     overflow-x: hidden;
     transition: 0.5s;  
+    
 }
 .sidenav a + div{
     padding: 8px 8px 8px 32px;
@@ -141,7 +142,7 @@ $gray-footer: #d3d7dc;
 @media screen and (min-width:992px){
     .dropdown-content {
     
-        width: 30vw;
+        width: 20vw;
         background-color: white;
         border: 2px solid black;
         
@@ -149,7 +150,12 @@ $gray-footer: #d3d7dc;
         box-shadow: 5px 5px black;
         
     }
+    .ps-lg-variable{
+        padding-left: 5rem !important;
+    }
 }
+
+
 .footer-cols{
     width: auto;
     padding: .5rem;
@@ -164,13 +170,34 @@ footer{
     width: auto;
     padding: .5rem;
 }
-
-
-
-
-  
-
-
+.sloth{
+    position: absolute;
+    top:0;
+    right:5vw;
+}
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    top:45vh;
+    right: 25px;
+    z-index: 2;
+    background-color: solid white;
+    
+}
+.accordion{
+    background-color: white ;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        
+        opacity: 0;
+    }
+}
 
   
 body {
@@ -357,6 +384,10 @@ h2 {
             box-shadow: none !important;
             border: thin solid $boder-color;
             min-height: 200px;
+                .tex-See{
+                    cursor: pointer;
+                    color: #3E49D7;
+                }
                 
                 .card-topic {
                     font-size: 14px;
@@ -385,7 +416,11 @@ h2 {
                     font-size: 30px;
                         a {
                             text-decoration: none;
-                    }
+                                &:hover {
+                                    cursor: pointer;
+                                    color: #3E49D7;
+                                    }
+                            }
                 }
                 
         
