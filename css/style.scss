@@ -175,6 +175,31 @@ footer{
     top:0;
     right:5vw;
 }
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    position: absolute;
+    top:45vh;
+    right: 25px;
+    z-index: 2;
+    background-color: solid white;
+    
+}
+.accordion{
+    background-color: white ;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+    z-index: 1;
+    &:hover{
+        
+        opacity: 0;
+    }
+    
+}
+
 
 
 

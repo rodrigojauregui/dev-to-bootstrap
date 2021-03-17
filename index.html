@@ -72,25 +72,44 @@
           <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-podcasts.svg" alt="">Podcasts</div>
           <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-videos.svg" alt="">Videos</div>
           <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-tags.svg" alt="">Tags</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-code-of-conduct.svg" alt="">Code of Conduct</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-FAQ.svg" alt="">FAQ</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-dev-shop.svg" alt="">DEV Shop</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-sponsor.svg" alt="">Sponsors</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="">About</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-privacy-policy.svg" alt="">Privacy Policy</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-terms-of-use.svg" alt="">Terms of use</div>
-          <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-contact.svg" alt="">Contact</div>
-          <div class="col-12 pt-4 ms-2 d-flex justify-content-around border-top">
-            <div class="mx-2"><img src="/img/icon-twitter.svg" alt=""></div>
-            <div class="mx-2"><img src="/img/icon-fb.svg" alt=""></div>
-            <div class="mx-2"><img src="/img/icon-git.svg" alt=""></div>
-            <div class="mx-2"><img src="/img/icon-ig.svg" alt=""></div>
-            <div class="mx-2"><img src="/img/icon-mess.svg" alt=""></div>
+          <button class=" accordion col-12 pb-4 ms-5 ps-4 d-flex align-items-center text-muted">more...</button>
+            <div class="panel">
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-code-of-conduct.svg" alt="">Code of Conduct</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-FAQ.svg" alt="">FAQ</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-dev-shop.svg" alt="">DEV Shop</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-sponsor.svg" alt="">Sponsors</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="">About</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-privacy-policy.svg" alt="">Privacy Policy</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-terms-of-use.svg" alt="">Terms of use</div>
+            <div class="col-12 pb-4 ms-2 ps-4 d-flex align-items-center"><img class="pe-2" src="/img/icon-contact.svg" alt="">Contact</div>
+            <div class="col-12 pt-4 ms-2 d-flex justify-content-around border-top">
+                <div class="mx-2"><img src="/img/icon-twitter.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-fb.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-git.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-ig.svg" alt=""></div>
+                <div class="mx-2"><img src="/img/icon-mess.svg" alt=""></div>
+            </div>
+          
         </div>
-
-        </div>
+        
       </div>
     </nav>  
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+    </script>
     <script>
       function openNav() {
         document.getElementById("mySidenav").style.width = "80%";
