@@ -4,6 +4,10 @@
   color: black;
 }
 
+.bg-gray-footer {
+  background-color: #d3d7dc;
+}
+
 .menunav {
   height: 56px;
   box-shadow: 0 1px 1px -1px #333;
@@ -97,6 +101,9 @@
   left: -5px !important;
   box-shadow: 5px 5px black;
 }
+.dropdown-content a:hover {
+  color: blue;
+}
 
 .search {
   width: 385px;
@@ -128,6 +135,34 @@
     box-shadow: 5px 5px black;
   }
 }
+@media screen and (min-width: 992px) {
+  .dropdown-content {
+    width: 30vw;
+    background-color: white;
+    border: 2px solid black;
+    left: -5px !important;
+    box-shadow: 5px 5px black;
+  }
+}
+.footer-cols {
+  width: auto;
+  padding: 0.5rem;
+}
+
+footer {
+  text-align: center;
+}
+footer p {
+  -webkit-text-size-adjust: 0.875rem;
+     -moz-text-size-adjust: 0.875rem;
+          text-size-adjust: 0.875rem;
+}
+
+.s-auto {
+  width: auto;
+  padding: 0.5rem;
+}
+
 body {
   background-color: #eef0f1;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
